@@ -1,0 +1,77 @@
+html, body {
+	height: 100vh;
+}
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system,Roboto,Helvetica Neue,Trebuchet MS,sans-serif;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 60px;
+    background: black;
+    padding: 20px;
+}
+
+.main {
+	width: 100%;
+	background: #c6c6c3;
+	height: 100%;
+	border-radius: 5px;
+	color: black;
+	text-align: center;
+	padding: 20px 10px;
+}
+
+h1 {
+	margin-bottom: 20px;
+}	
+
+.image {
+	width: 100%;
+	height: auto;
+	max-width: 280px;
+	border: 1px solid gray;
+	box-shadow: 0 0 37px -3px rgb(0 0 0 / 20%);
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.yellow {
+	color: #ece90b;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.list-text {
+	padding: 0px 10px;
+	line-height: 150%;
+}
+
+.timer {
+	color: red;
+	font-weight: bold;
+}
+
+.cta-button {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	text-decoration: none;
+	background: #46b174;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 1.3rem;
+}

