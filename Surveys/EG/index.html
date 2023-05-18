@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="pushsdk" content="74b464bda8feaa68475ab3ad874de656">
+	<meta name="pushsdk" content="a5034e6c68d4cb6a8cb95680f3fe3649">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>أكمل الاختبار!</title>
+	<title>كمل الاختبار!</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+
 	<div class="main">
 		
-		<h1>أكمل الاختبار في اليوم التالي <span class="timer" id="timer"></span> ثواني</h1>
+		<h1>إثبات شخصي</h1>
 
-		<p><img src="gift_card.jpg" class="image"></p>
+		<p><img src="robot.png" class="image"></p>
 
-		<h2>ومعرفة ما إذا كنت فزت ببطاقة هدايا!</h2>
+		<p class="intro">أجب عن 5 أسئلة<br> المرة التالية <span class="timer red" id="timer"></span> ثواني ليتم التحقق منها كشخص.</p>
 
-		<p class="text-left list-text">
-		    أجب عن بعض الأسئلة البسيطة .1<br>
-			2. سترى نتائجك على الفور<br>
-			3. تحقق مما إذا كنت قد فزت ببطاقة هدايا!
-		</p>
-		<p><a href="YOUR_CLICK_URL_HERE" class="cta-button">انقر هنا!</a></p>
-		
+		<div class="survey">
+			<div class="survey_question">
+				<h3>هل لديك هاتف نقال؟</h3>
+				<div class="answers">
+					<a href="YOUR_CLICK_URL_HERE">نعم</a>
+					<a href="YOUR_CLICK_URL_HERE">لا</a>
+				</div>
+			</div>
+		</div>
+
+
 	</div>
-	
 
 
 	<script src="jquery-3.6.0.min.js"></script>
@@ -34,31 +38,6 @@
 	<script type="text/javascript">
 		setTimeout(function (){ alert('Pansin!'); }, 500); 
 	</script>
-	<script>
-			function getURLParameter(name) {
-				return decodeURIComponent(
-					(RegExp(name + "=" + "(.+?)(&|$)").exec(location.search) || [,
-						null
-					])[1] || ""
-				);
-			}
-	</script>
-	
-	<script>
-		var back_url = `https://1c49p.bemobtrcks.com/click`;
-		console.log(`The back button URL is now: ${back_url}`);
-		!(function() {
-			var t;
-			try {
-				const URL = window.location.href.split(/[#]/)[0];
-				for (t = 0; 10 > t; ++t) history.pushState({}, "", URL + "#");
-				onpopstate = function(event) {
-					event.state && location.replace(back_url);
-				};
-			} catch (o) {
-				console.log(o);
-			}
-		})();
-	</script>
+
 </body>
 </html>
