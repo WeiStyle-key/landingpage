@@ -50,26 +50,5 @@
     countdown(1);
 
 
-    $(document).ready(function(){
-
-        $("[data-url-param]").each(function(){
-            var url_param =  $(this).attr('data-url-param');
-            if( getURLParameter( url_param ) ){
-                if( $(this).prop("tagName").toLowerCase() == "img" ){
-                    $(this).attr( 'src', getURLParameter( url_param ) ); 
-                }
-                else {
-                   $(this).html( getURLParameter( url_param ) ); 
-                }
-                
-            }
-        });
-
-        if( getURLParameter('alert') ){
-            alert( getURLParameter('alert') );
-        }
-
-    }); 
-
 
 })(jQuery);

