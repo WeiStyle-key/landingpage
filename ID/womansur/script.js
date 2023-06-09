@@ -10,10 +10,6 @@ function startTimer(t, n) {
     }, 1000);
 }
 
-function go() {
-    window.onbeforeunload = null;
-    window.location = `https://track.toackeerby.shop/cwdhl0k.php?lp=1`;
-}
 
 
 window.onload = function () {
