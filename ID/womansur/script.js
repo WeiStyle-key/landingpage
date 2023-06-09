@@ -12,6 +12,7 @@ function startTimer(t, n) {
 
 
 
+
 window.onload = function () {
     var photos = Array.from(document.getElementsByClassName("photo"));
     var randomIndex = Math.floor(Math.random() * photos.length);
