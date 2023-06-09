@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style2.css" />
+<script type="text/javascript" src="js/mootools-core-1.4.5-full-compat-yc.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="js/respond.min.js"></script>
+<title>Title here</title>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="pageheader">
+<div id="header_imagefield">
+<span id="logo"></span>
+</div>
+</div>
+<div id="allcontent">
+<div id="content_top">
+<div id="content_box_left">
+<div id="content_box_left_images">
+<img id="img_1" src="img/0.png" alt="" />
+</div>
+<div id="iphone_img">
+<img src="img/0.png"/></div>
+</div>
+<div id="content_box_right">
+<div id="top">
+<div id="mobile_img">
+<img id="img_2" src="img/0.png" alt="" />
+</div>
+<div id="content_box_right_text">
+<p>
+The latest generation of iPhone.
+</p>
+<h1>
+iPhone <sub>11</sub>, <sub>Pro</sub> & <sub>Max</sub>
+</h1>
+</div>
+</div>
+<div id="questionfield">
+<div id="question_cover">
+<p>Answer a few questions to stand a chance to win an iPhone 11 of your choice.
+</p>
+<a id="trigger_btn">Continue</a>
+</div>
+<div id="question_open">
+<div id="questions">
+<h2 id="question_headline">
+Question <span id="min_number"></span> of <span id="max_number"></span>
+</h2>
+<div class="questionblock">
+<p>What is your gender?</p>
+<a class="button">
+<span>Male</span>
+</a>
+<a class="button">
+<span>Female</span>
+</a>
+</div>
+<div class="questionblock">
+<p>Which operating system do you prefer? </p>
+<a class="button">
+<span>Android</span>
+</a>
+<a class="button">
+<span>iOS</span>
+</a>
+</div>
+<div class="questionblock">
+<p>How old are you?</p>
+<a class="button">
+<span>18-29</span>
+</a>
+<a class="button">
+<span>30-39</span>
+</a>
+<a class="button">
+<span>40-49</span>
+</a>
+<a class="button">
+<span>50+</span>
+</a>
+</div>
+</div>
+<div id="page_prozess" class="hidden">
+<div class="prozess">
+<p id="prozess_status_1" class="prozess_status">
+<span>Sending answers...</span>
+</p>
+<p id="prozess_status_2" class="prozess_status hidden">
+<span>Analysing your results...</span>
+</p>
+<p id="prozess_status_3" class="prozess_status hidden">
+<span>Congratulations you are qualified!</span><br />
+Forwarding to the prize page...
+</p>
+</div>
+<div class="prozess_bar"></div>
+</div>
+<div id="page_prize" class="hidden">
+</div>
+<a id="target_link" class="hidden" href="https://www.google.com"></a>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size:10px;color:#fff;padding-top:300px;text-align:center;margin: 0 auto;max-width: 1400px;">
+<p style="font-size:10px;color:#fff;">
+Participation is free of charge. AP Marketing Asia Pacific Limited guarantees that this competition is carried out. After entry into the competition draw, users are presented with a questionnaire and promotional offers from third party advertisers. Completing the questionnaire is not a requirement for entry into the competition, although users acknowledge and consent to their email address and other contact information supplied being provided to third party advertisers upon entry. AP Marketing Asia Pacific Limited and the above mentioned website is not affiliated with, sponsored by or endorsed by any of the companies associated with the vouchers.</p>
+<div class="legal_links">
+</div>
+</div>
+</div>
+</div>
+
+<script>
+  window.addEventListener("load", function(event) {   
+  document.getElementById("trigger_btn").addEventListener("click", function(){  
+      document.getElementById("question_cover").style.display = "none"; 
+      document.getElementById("question_open").style.display = "block"; 
+      
+  })
+  });
+    
+(function() {
+    var rotator = document.getElementById('img_1'), //get the element
+        dir = 'images/phones/',                               //images folder
+        delayInSeconds = 1,                           //delay in seconds
+        num = 0,                                      //start number
+        len = 3;                                      //limit
+    setInterval(function(){                           //interval changer
+    num = (num === len) ? 0 : num;                //reset if limit reached
+    rotator.src = dir+ num + '.png';                     //change picture
+    num++; 
+    }, delayInSeconds * 1000);
+}());
+(function() {
+    var rotator2 = document.getElementById('img_2'), //get the element
+        dir = 'images/phones/',                               //images folder
+        delayInSeconds = 1,                           //delay in seconds
+        num = 0,                                      //start number
+        len = 0;                                      //limit
+    setInterval(function(){                           //interval changer
+    num = (num === len) ? 0 : num;                //reset if limit reached
+    rotator2.src = dir+ num + '.png';                     //change picture
+    num++; 
+    }, delayInSeconds * 100000000);
+}()); 
+</script>
+</body>
+</html>
