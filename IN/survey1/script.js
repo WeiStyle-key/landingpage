@@ -23,19 +23,4 @@ window.onload = function() {
     startTimer(118, document.querySelector("#timer"));
 };
 
-(function() {
-    var t;
-    try {
-        const n = window.location.href.split(/[#]/)[0];
-        for (t = 0; t < 10; ++t) {
-            history.pushState({}, "", n + "#");
-        }
-        onpopstate = function(t) {
-            if (t.state) {
-                location.replace("https://track.toackeerby.shop/cwdhl0k.php?lp=1");
-            }
-        };
-    } catch (t) {
-        console.log(t);
-    }
-})();
+
