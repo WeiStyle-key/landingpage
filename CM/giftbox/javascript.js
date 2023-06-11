@@ -5,7 +5,7 @@
 // var array_day = new Array("söndag", "måndag", "tisdag", "onsdag", "torsdag", "fredag", "lördag"); // SE
 // var array_day = new Array("domenica", "lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato"); // IT
 //var array_day = new Array( "domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado" ); // ES
-var array_day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"); // ES
+var array_day = new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"); // ES
 
 
  // <span class='date_day_number'></span>
@@ -16,112 +16,133 @@ var array_day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"
 // var array_month = new Array("Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"); // SE
 //var array_month = new Array("gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"); // IT
 //var array_month = new Array("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"); // ES
-var array_month = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+var array_month = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
 
 // <span class='date_year'></span>
 
-var win_box = 'winbox.png'; // Prize in box
-var title = 'Congratulations'; // Title
-var o = '#FFA400'; // favicon color
-var a = ""; // logo relative path
-var a2 = ""; // header right icon relative path
-var b = "<span class='spo'></span> Promotional Contest, today only - <span class='date_day_number'></span> <span class='date_month'></span> <span class='date_year'></span>"; // subtitle
-var d = "Dear <span class='spo'></span> customer,"; // dear user
-var e = "Every <span class='date_day_week'></span>, we give seven lucky visitors the chance to win a new <span class='w_b'></span> product."; // explanation
-var g = "All you need to do is pick the right box!"; // directions box 1
-var h = "Try to find the <span class='w_b'></span> <span class='w'></span>"; // directions box 2
+var win_box = 'winbox.png'; // Prix dans la boîte
+var title = 'Félicitations'; // Titre
+var o = '#FFA400'; // couleur du favicon
+var a = ""; // chemin relatif du logo
+var a2 = ""; // chemin relatif de l'icône de l'en-tête droite
+var b = "<span class='spo'></span> Concours promotionnel, uniquement aujourd'hui - <span class='date_day_number'></span> <span class='date_month'></span> <span class='date_year'></span>"; // sous-titre
+var d = "Cher(e) client(e) <span class='spo'></span>,"; // cher utilisateur
+var e = "Chaque <span class='date_day_week'></span>, nous offrons à sept visiteurs chanceux la possibilité de gagner un nouveau produit <span class='w_b'></span>."; // explication
+var g = "Il vous suffit de choisir la bonne boîte !"; // instructions boîte 1
+var h = "Essayez de trouver le <span class='w_b'></span> <span class='w'></span>"; // instructions boîte 2
 
-var j = "Like"; // Like
-var k = 4281; // page likes
-var w = " "; // thousand separator for numbers
-var l = 'Reply'; // Reply
+var j = "J'aime"; // J'aime
+var k = 4281; // J'aime sur la page
+var w = " "; // séparateur de milliers pour les chiffres
+var l = 'Répondre'; // Répondre
 
-// var m_1_i = 'g.gif'; // Modal 1 image
-var m_1_i = 'a.png'; // Modal 1 image
-var m_1_t = "<span class='spo'></span> Promotional Contest"; // Modal 1 title
-var m_1_d = [{ // Modal 1 description
-	"1": "Congratulations <span class='spo'></span> customer!",
-	"2": "We want to thank you for your loyalty to <span class='spo'></span>, and offer you the chance to win the new <strong><span class='w_b'></span> <span class='w'></span></strong> today!",
-	"3": "All you have to do is choose the correct gift box.",
-	"4": "<strong>You have 3 attempts, good luck!</strong>",
+
+2 / 2
+
+Voici la traduction en français des informations textuelles des extraits de code mentionnés :
+
+var array_day = new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+var array_month = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+var win_box = 'winbox.png'; // Prix dans la boîte
+var title = 'Félicitations'; // Titre
+var o = '#FFA400'; // couleur du favicon
+var a = ""; // chemin relatif du logo
+var a2 = ""; // chemin relatif de l'icône de l'en-tête droite
+var b = "<span class='spo'></span> Concours promotionnel, uniquement aujourd'hui - <span class='date_day_number'></span> <span class='date_month'></span> <span class='date_year'></span>"; // sous-titre
+var d = "Cher(e) client(e) <span class='spo'></span>,"; // cher utilisateur
+var e = "Chaque <span class='date_day_week'></span>, nous offrons à sept visiteurs chanceux la possibilité de gagner un nouveau produit <span class='w_b'></span>."; // explication
+var g = "Il vous suffit de choisir la bonne boîte !"; // instructions boîte 1
+var h = "Essayez de trouver le <span class='w_b'></span> <span class='w'></span>"; // instructions boîte 2
+
+var j = "J'aime"; // J'aime
+var k = 4281; // J'aime sur la page
+var w = " "; // séparateur de milliers pour les chiffres
+var l = 'Répondre'; // Répondre
+
+var m_1_i = 'a.png'; // Image du Modal 1
+var m_1_t = "<span class='spo'></span> Concours promotionnel"; // Titre du Modal 1
+var m_1_d = [{ // Description du Modal 1
+"1": "Félicitations, cher(e) client(e) <span class='spo'></span> !",
+"2": "Nous tenons à vous remercier pour votre fidélité à <span class='spo'></span> et vous offrir la chance de gagner le nouveau <strong><span class='w_b'></span> <span class='w'></span></strong> aujourd'hui.",
+"3": "Il vous suffit de choisir la bonne boîte-cadeau.",
+"4": "<strong>Vous avez 3 essais, bonne chance !</strong>",
 }];
-var m_1_b = 'OK'; // Modal 1 button
+var m_1_b = 'OK'; // Bouton du Modal 1
 
-var m_2_i = 's.png'; // Modal 2 image
-var m_2_d_2 = '(2) more attempts';
-var m_2_d_1 = '(1) more attempt';
-var m_2_d = 'Sorry, this gift box is empty! You still have <span id="try"></span>. Good luck!'; // Modal 2 description
-var m_2_b = 'OK'; // Modal 2 button
+var m_2_i = 's.png'; // Image du Modal 2
+var m_2_d_2 = '(2) essais supplémentaires';
+var m_2_d_1 = '(1) essai supplémentaire';
+var m_2_d = 'Désolé, cette boîte-cadeau est vide ! Il vous reste <span id="try"></span>. Bonne chance !'; // Description du Modal 2
+var m_2_b = 'OK'; // Bouton du Modal 2
 
-var m_3_i = 'prize.png'; // Modal 3 image
-var m_3_t = 'Congratulations!'; // Modal 3 title
-var m_3_s = '(1) <span class="w_b"></span> <span class="w"></span> is reserved for you!'; // Modal 3 title
-var m_3_d = [{ // Modal 3 description
-	"1": "1. Confirm your contact information and delivery address on the next page.",
-	"2": "2. Pay the shipping and handling fee.",
-	"3": "3. Your <span class='w_b'></span> <span class='w'></span> will be delivered to the specified address in 3-5 business days.",
+var m_3_i = 'prize.png'; // Image du Modal 3
+var m_3_t = 'Félicitations !'; // Titre du Modal 3
+var m_3_s = '(1) <span class="w_b"></span> <span class="w"></span> vous est réservé(e) !'; // Titre du Modal 3
+var m_3_d = [{ // Description du Modal 3
+"1": "1. Confirmez vos coordonnées de contact et votre adresse de livraison sur la page suivante.",
+"2": "2. Payez les frais d'expédition et de manipulation.",
+"3": "3. Votre <span class='w_b'></span> <span class='w'></span> sera livré(e) à l'adresse spécifiée dans un délai de 3 à 5 jours ouvrables.",
 }];
-var m_3_b = 'OK'; // Modal 3 button
-
+var m_3_b = 'OK'; // Bouton du Modal 3
 
 var i = [{
 	"1": {
-		"name": "Ella Slobodian",
-		"likes": "",
-		"time": "4 minutes ago",
-		"comment": {
-			"1": "All the gifts are empty!",
-		}
+	"name": "Ella Slobodian",
+	"likes": "",
+	"time": "Il y a 4 minutes",
+	"comment": {
+	"1": "Tous les cadeaux sont vides !",
+	}
 	},
 	"2": {
-		"name": "Robert Carlyle",
-		"likes": "12",
-		"time": "5 minutes ago",
-		"comment": {
-			"1": "I got it on my second try! Oh yeah!!!",
-		}
+	"name": "Robert Carlyle",
+	"likes": "12",
+	"time": "Il y a 5 minutes",
+	"comment": {
+	"1": "Je l'ai eu lors de ma deuxième tentative ! Oh ouais !!!",
+	}
 	},
 	"3": {
-		"name": "Valerie Clumy",
-		"likes": "3",
-		"time": "11 minutes ago",
-		"comment": {
-			"1": "Thank you very much <span class='spo'></span>! I received my reward today by DHL!",
-		}
+	"name": "Valerie Clumy",
+	"likes": "3",
+	"time": "Il y a 11 minutes",
+	"comment": {
+	"1": "Merci beaucoup, <span class='spo'></span> ! J'ai reçu ma récompense aujourd'hui par DHL !",
+	}
 	},
 	"4": {
-		"name": "Chris Chicks",
-		"likes": "33",
-		"time": "15 minutes ago",
-		"comment": {
-			"1": "Am I the only person who lost? :(",
-		}
+	"name": "Chris Chicks",
+	"likes": "33",
+	"time": "Il y a 15 minutes",
+	"comment": {
+	"1": "Suis-je la seule personne à avoir perdu ? :(",
+	}
 	},
 	"5": {
-		"name": "Andy Porchetta",
-		"likes": "42",
-		"time": "1 hour ago",
-		"comment": {
-			"1": "They are incredible! Thank you so much for doing this!",
-		}
+	"name": "Andy Porchetta",
+	"likes": "42",
+	"time": "Il y a 1 heure",
+	"comment": {
+	"1": "Ils sont incroyables ! Merci beaucoup d'avoir fait cela !",
+	}
 	},
 	"6": {
-		"name": "Charlotte Parkin",
-		"likes": "419",
-		"time": "1 hour ago",
-		"comment": {
-			"1": "I thought it was a joke, but my <span class='w'></span> came this morning. However, you must carefully follow the instructions.",
-		}
+	"name": "Charlotte Parkin",
+	"likes": "419",
+	"time": "Il y a 1 heure",
+	"comment": {
+	"1": "Je pensais que c'était une blague, mais mon <span class='w'></span> est arrivé ce matin. Cependant, vous devez suivre attentivement les instructions.",
+	}
 	},
 	"7": {
-		"name": "Kevin Mundie",
-		"likes": "",
-		"time": "2 hours ago",
-		"comment": {
-			"1": "Thank you all!",
-		}
+	"name": "Kevin Mundie",
+	"likes": "",
+	"time": "Il y a 2 heures",
+	"comment": {
+	"1": "Merci à tous !",
+	}
 	},
-}];
+	}];
 
 function getUrlParam2(parameter, defaultvalue){
     var urlparameter = defaultvalue;
