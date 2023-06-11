@@ -37,28 +37,6 @@ var w = " "; // séparateur de milliers pour les chiffres
 var l = 'Répondre'; // Répondre
 
 
-2 / 2
-
-Voici la traduction en français des informations textuelles des extraits de code mentionnés :
-
-var array_day = new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
-var array_month = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
-var win_box = 'winbox.png'; // Prix dans la boîte
-var title = 'Félicitations'; // Titre
-var o = '#FFA400'; // couleur du favicon
-var a = ""; // chemin relatif du logo
-var a2 = ""; // chemin relatif de l'icône de l'en-tête droite
-var b = "<span class='spo'></span> Concours promotionnel, uniquement aujourd'hui - <span class='date_day_number'></span> <span class='date_month'></span> <span class='date_year'></span>"; // sous-titre
-var d = "Cher(e) client(e) <span class='spo'></span>,"; // cher utilisateur
-var e = "Chaque <span class='date_day_week'></span>, nous offrons à sept visiteurs chanceux la possibilité de gagner un nouveau produit <span class='w_b'></span>."; // explication
-var g = "Il vous suffit de choisir la bonne boîte !"; // instructions boîte 1
-var h = "Essayez de trouver le <span class='w_b'></span> <span class='w'></span>"; // instructions boîte 2
-
-var j = "J'aime"; // J'aime
-var k = 4281; // J'aime sur la page
-var w = " "; // séparateur de milliers pour les chiffres
-var l = 'Répondre'; // Répondre
-
 var m_1_i = 'a.png'; // Image du Modal 1
 var m_1_t = "<span class='spo'></span> Concours promotionnel"; // Titre du Modal 1
 var m_1_d = [{ // Description du Modal 1
