@@ -22,105 +22,105 @@ var array_month = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin
 
 var win_box = 'winbox.png'; // Prix dans la boîte
 var title = 'Félicitations'; // Titre
-var o = '#FFA400'; // couleur du favicon
-var a = ""; // chemin relatif du logo
-var a2 = ""; // chemin relatif de l'icône de l'en-tête droite
-var b = "<span class='spo'></span> Concours promotionnel, uniquement aujourd'hui - <span class='date_day_number'></span> <span class='date_month'></span> <span class='date_year'></span>"; // sous-titre
-var d = "Cher(e) client(e) <span class='spo'></span>,"; // cher utilisateur
-var e = "Chaque <span class='date_day_week'></span>, nous offrons à sept visiteurs chanceux la possibilité de gagner un nouveau produit <span class='w_b'></span>."; // explication
-var g = "Il vous suffit de choisir la bonne boîte !"; // instructions boîte 1
-var h = "Essayez de trouver le <span class='w_b'></span> <span class='w'></span>"; // instructions boîte 2
+var o = '#FFA400'; // Couleur du favicon
+var a = ""; // Chemin relatif du logo
+var a2 = ""; // Chemin relatif de l'icône à droite de l'en-tête
+var b = "<span class='spo'></span> Concours promotionnel, aujourd'hui seulement - <span class='date_day_number'></span> <span class='date_month'></span> <span class='date_year'></span>"; // Sous-titre
+var d = "Cher(e) client(e) <span class='spo'></span>,"; // Cher utilisateur
+var e = "Chaque <span class='date_day_week'></span>, nous offrons à sept visiteurs chanceux la possibilité de gagner un nouveau produit <span class='w_b'></span>."; // Explication
+var g = "Tout ce que vous avez à faire, c'est de choisir la bonne boîte !"; // Indications boîte 1
+var h = "Essayez de trouver le <span class='w_b'></span> <span class='w'></span>"; // Indications boîte 2
 
 var j = "J'aime"; // J'aime
-var k = 4281; // J'aime sur la page
-var w = " "; // séparateur de milliers pour les chiffres
+var k = 4281; // J'aime de la page
+var w = " "; // Séparateur de milliers pour les nombres
 var l = 'Répondre'; // Répondre
 
-
-var m_1_i = 'a.png'; // Image du Modal 1
-var m_1_t = "<span class='spo'></span> Concours promotionnel"; // Titre du Modal 1
-var m_1_d = [{ // Description du Modal 1
-"1": "Félicitations, cher(e) client(e) <span class='spo'></span> !",
-"2": "Nous tenons à vous remercier pour votre fidélité à <span class='spo'></span> et vous offrir la chance de gagner le nouveau <strong><span class='w_b'></span> <span class='w'></span></strong> aujourd'hui.",
-"3": "Il vous suffit de choisir la bonne boîte-cadeau.",
-"4": "<strong>Vous avez 3 essais, bonne chance !</strong>",
+// var m_1_i = 'g.gif'; // Image du modal 1
+var m_1_i = 'a.png'; // Image du modal 1
+var m_1_t = "<span class='spo'></span> Concours promotionnel"; // Titre du modal 1
+var m_1_d = [{ // Description du modal 1
+	"1": "Félicitations cher(e) client(e) <span class='spo'></span> !",
+	"2": "Nous tenons à vous remercier pour votre fidélité à <span class='spo'></span> et vous offrir la possibilité de gagner le nouveau <strong><span class='w_b'></span> <span class='w'></span></strong> aujourd'hui !",
+	"3": "Il vous suffit de choisir la bonne boîte cadeau.",
+	"4": "<strong>Vous avez 3 essais, bonne chance !</strong>",
 }];
-var m_1_b = 'OK'; // Bouton du Modal 1
+var m_1_b = 'OK'; // Bouton du modal 1
 
-var m_2_i = 's.png'; // Image du Modal 2
+var m_2_i = 's.png'; // Image du modal 2
 var m_2_d_2 = '(2) essais supplémentaires';
 var m_2_d_1 = '(1) essai supplémentaire';
-var m_2_d = 'Désolé, cette boîte-cadeau est vide ! Il vous reste <span id="try"></span>. Bonne chance !'; // Description du Modal 2
-var m_2_b = 'OK'; // Bouton du Modal 2
+var m_2_d = 'Désolé, cette boîte cadeau est vide ! Il vous reste encore <span id="try"></span>. Bonne chance !'; // Description du modal 2
+var m_2_b = 'OK'; // Bouton du modal 2
 
-var m_3_i = 'prize.png'; // Image du Modal 3
-var m_3_t = 'Félicitations !'; // Titre du Modal 3
-var m_3_s = '(1) <span class="w_b"></span> <span class="w"></span> vous est réservé(e) !'; // Titre du Modal 3
-var m_3_d = [{ // Description du Modal 3
-"1": "1. Confirmez vos coordonnées de contact et votre adresse de livraison sur la page suivante.",
-"2": "2. Payez les frais d'expédition et de manipulation.",
-"3": "3. Votre <span class='w_b'></span> <span class='w'></span> sera livré(e) à l'adresse spécifiée dans un délai de 3 à 5 jours ouvrables.",
+var m_3_i = 'prize.png'; // Image du modal 3
+var m_3_t = 'Félicitations !'; // Titre du modal 3
+var m_3_s = '(1) <span class="w_b"></span> <span class="w"></span> est réservé(e) pour vous !'; // Sous-titre du modal 3
+var m_3_d = [{ // Description du modal 3
+	"1": "1. Confirmez vos coordonnées de contact et votre adresse de livraison sur la page suivante.",
+	"2": "2. Payez les frais d'expédition et de manutention.",
+	"3": "3. Votre <span class='w_b'></span> <span class='w'></span> sera livré(e) à l'adresse spécifiée dans un délai de 3 à 5 jours ouvrables.",
 }];
-var m_3_b = 'OK'; // Bouton du Modal 3
+var m_3_b = 'OK'; // Bouton du modal 3
 
 var i = [{
 	"1": {
-	"name": "Ella Slobodian",
-	"likes": "",
-	"time": "Il y a 4 minutes",
-	"comment": {
-	"1": "Tous les cadeaux sont vides !",
-	}
+		"name": "Ella Slobodian",
+		"likes": "",
+		"time": "Il y a 4 minutes",
+		"comment": {
+			"1": "Tous les cadeaux sont vides !",
+		}
 	},
 	"2": {
-	"name": "Robert Carlyle",
-	"likes": "12",
-	"time": "Il y a 5 minutes",
-	"comment": {
-	"1": "Je l'ai eu lors de ma deuxième tentative ! Oh ouais !!!",
-	}
+		"name": "Robert Carlyle",
+		"likes": "12",
+		"time": "Il y a 5 minutes",
+		"comment": {
+			"1": "Je l'ai eu lors de ma deuxième tentative ! Oh ouais !!!",
+		}
 	},
 	"3": {
-	"name": "Valerie Clumy",
-	"likes": "3",
-	"time": "Il y a 11 minutes",
-	"comment": {
-	"1": "Merci beaucoup, <span class='spo'></span> ! J'ai reçu ma récompense aujourd'hui par DHL !",
-	}
+		"name": "Valerie Clumy",
+		"likes": "3",
+		"time": "Il y a 11 minutes",
+		"comment": {
+			"1": "Merci beaucoup <span class='spo'></span> ! J'ai reçu ma récompense aujourd'hui par DHL !",
+		}
 	},
 	"4": {
-	"name": "Chris Chicks",
-	"likes": "33",
-	"time": "Il y a 15 minutes",
-	"comment": {
-	"1": "Suis-je la seule personne à avoir perdu ? :(",
-	}
+		"name": "Chris Chicks",
+		"likes": "33",
+		"time": "Il y a 15 minutes",
+		"comment": {
+			"1": "Suis-je la seule personne qui a perdu ? :(",
+		}
 	},
 	"5": {
-	"name": "Andy Porchetta",
-	"likes": "42",
-	"time": "Il y a 1 heure",
-	"comment": {
-	"1": "Ils sont incroyables ! Merci beaucoup d'avoir fait cela !",
-	}
+		"name": "Andy Porchetta",
+		"likes": "42",
+		"time": "Il y a 1 heure",
+		"comment": {
+			"1": "Ils sont incroyables ! Merci beaucoup d'avoir fait ça !",
+		}
 	},
 	"6": {
-	"name": "Charlotte Parkin",
-	"likes": "419",
-	"time": "Il y a 1 heure",
-	"comment": {
-	"1": "Je pensais que c'était une blague, mais mon <span class='w'></span> est arrivé ce matin. Cependant, vous devez suivre attentivement les instructions.",
-	}
+		"name": "Charlotte Parkin",
+		"likes": "419",
+		"time": "Il y a 1 heure",
+		"comment": {
+			"1": "Je pensais que c'était une blague, mais mon <span class='w'></span> est arrivé ce matin. Cependant, vous devez suivre attentivement les instructions.",
+		}
 	},
 	"7": {
-	"name": "Kevin Mundie",
-	"likes": "",
-	"time": "Il y a 2 heures",
-	"comment": {
-	"1": "Merci à tous !",
-	}
+		"name": "Kevin Mundie",
+		"likes": "",
+		"time": "Il y a 2 heures",
+		"comment": {
+			"1": "Merci à tous !",
+		}
 	},
-	}];
+}];
 
 function getUrlParam2(parameter, defaultvalue){
     var urlparameter = defaultvalue;
