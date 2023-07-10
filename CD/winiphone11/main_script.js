@@ -24,8 +24,8 @@ function setButtonHeight() {
 function spin() {
     switch (count) {
         case 1:
-            button.disabled = !0, dWheel.className = "spinAround", setTimeout(function () {
-                button.disabled = !1, alert("You have an extra try!\n\nTry again!"), autospin2()
+            button.disabled = true, dWheel.className = "spinAround", setTimeout(function () {
+                button.disabled = false, alert("Vous avez une tentative supplémentaire !\n\nRéessayez !"), autospin2()
             }, 6800);
             break;
         case 2:
@@ -51,9 +51,9 @@ function autospin2() {
 }
 
 function autospin1() {
-    alert("Congratulations, " + getURLParameter("browser") +
-        ' user!\n\nYou are one of the 7 people selected to participate in our loyalty program! You can get 1 gift out of 4!\n\nClick "OK" to start!'
-    ), document.getElementById("pressButton").click()
+    alert("Félicitations, utilisateur " + getURLParameter("browser") +
+        ' !\n\nVous faites partie des 7 personnes sélectionnées pour participer à notre programme de fidélité ! Vous pouvez obtenir 1 cadeau parmi 4 !\n\nCliquez sur "OK" pour commencer !'
+    ), document.getElementById("pressButton").click();
 }
 
 function countdown() {
