@@ -21,10 +21,10 @@ This landing page has been cleaned for Anstrex spy tool by The Landers Club ( ht
 			var l = new Boolean(null == j || 0 == j || void 0 == j || "" == j),
 				e = new Date(Date.now() - 24 * j * 60 * 60 * 1000);
 			1 == l && (j = 0);
-			var k = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-				i = ["January", "February", "March", "April", "Maybe", "June", "July", "August", "September", "October",
-					"November", "December"
-				];
+			var k = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"]
+			i = ["janeiro", "fevereiro", "março", "abril", "talvez", "junho", "julho", "agosto", "setembro", "outubro",
+				"Novembro dezembro"
+			];
 			return null != !a && 0 != !a && void 0 != !a ? e.getDate() + " " + i[e.getMonth()] : "day_name_only" == a && l ?
 				k[e.getDay()] : "top_date" == a && l ? k[e.getDay()] + ", " + e.getDate() + " " + i[e.getMonth()] + " " + e
 					.getFullYear() : void 0
