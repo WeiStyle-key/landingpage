@@ -138,8 +138,8 @@ function getUrlParam(param, defaultValue) {
 
 // ON PAGE LOAD
 $(document).ready(function(){
-	win_brand = getUrlParam('bra', 'Brand');
-	win = getUrlParam('pro', 'Product');
+	win_brand = getUrlParam('bra', '');
+	win = getUrlParam('pro', '');
 	spo = getUrlParam('spo', '');
 
 	$(document).prop('title', title);
