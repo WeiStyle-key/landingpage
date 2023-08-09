@@ -141,7 +141,7 @@ function getUrlParam(param, defaultValue) {
 $(document).ready(function(){
 	win_brand = getUrlParam('bra', 'Marca');
 	win = getUrlParam('pro', 'Producto');
-	spo = getUrlParam('spo', '{marca_dispositivo}');
+	spo = getUrlParam('spo', );
 
 	$(document).prop('title', title);
 	if ( a != '' ) { $('#a .a').append('<img class="left" src="' + a + '" />'); }
